@@ -2,8 +2,9 @@
   <ItemGroup>
     <ProjectReference Include="..\Domain\Respawn.Core.Domain.csproj" />
   </ItemGroup>
+  
   <ItemGroup>
-    <Folder Include="Extensions\" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.1" />
   </ItemGroup>
   
   <PropertyGroup>
