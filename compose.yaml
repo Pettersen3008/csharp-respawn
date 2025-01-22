@@ -1,0 +1,15 @@
+﻿services:
+  respawn.api:
+    image: respawn.api
+    build:
+      context: .
+      dockerfile: Respawn.API/Dockerfile
+      
+  respawn.postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: respawn
+      POSTGRES_PASSWORD: respawn
+      POSTGRES_DB: respawn
+    ports:
+      - "5432:5432"
